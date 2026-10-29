@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Perfiles y biograf&iacute;as de los artistas del Colegio Nacional San Roque Gonz&aacute;lez de Santacruz.">
+  <title>Artistas | Arte San Roque González</title>
+
+  <!-- Tipografías (Google Fonts) e íconos (Font Awesome gratuito) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Young+Serif&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body data-pagina="artistas">
+
+  <!-- ===== Encabezado y navegación ===== -->
+  <header class="encabezado">
+    <div class="contenedor encabezado__contenido">
+      <a href="index.html" class="logo"><i class="fa-solid fa-palette"></i><span>Arte <strong>San Roque</strong></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPrincipal">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <nav class="navegacion" id="menuPrincipal" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="artistas.html">Artistas</a></li>
+          <li><a href="eventos.html">Eventos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="cabecera-pagina">
+      <div class="contenedor">
+        <h1>Nuestros artistas</h1>
+        <p>Conocé a los estudiantes y grupos que dan vida al arte institucional.</p>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor">
+        <!-- Tarjetas de perfil: generadas desde data/artistas.json -->
+        <div class="grilla" id="grillaArtistas"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Pie de página ===== -->
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie__columnas">
+        <div>
+          <h3>Colegio Nacional E.M.D. "San Roque González de Santacruz"</h3>
+          <p>Coronel Oviedo, Caaguazú, Paraguay.</p>
+        </div>
+        <div>
+          <h3>Enlaces rápidos</h3>
+          <ul>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="artistas.html">Artistas</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contacto</h3>
+          <ul>
+            <li><i class="fa-solid fa-location-dot"></i> Coronel Oviedo</li>
+            <li><a href="contacto.html"><i class="fa-solid fa-envelope"></i> Escribinos</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="pie__creditos">&copy; <span id="anioActual">2026</span> Arte San Roque · Desarrollado por Monserrath Arami Coronel Riveros — Bachillerato Técnico en Informática</p>
+    </div>
+  </footer>
+
+  <script src="js/datos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+[
+  { "id": "artes-plasticas", "nombre": "Artes plásticas", "icono": "fa-palette", "formatos": ["imagen", "video", "pdf"] },
+  { "id": "musica", "nombre": "Música", "icono": "fa-music", "formatos": ["video", "imagen", "pdf"] },
+  { "id": "danza", "nombre": "Danza", "icono": "fa-shoe-prints", "formatos": ["video", "imagen", "pdf"] },
+  { "id": "teatro", "nombre": "Teatro", "icono": "fa-masks-theater", "formatos": ["video", "pdf", "imagen"] },
+  { "id": "literatura", "nombre": "Literatura", "icono": "fa-book-open", "formatos": ["pdf", "imagen", "video"] }
+]

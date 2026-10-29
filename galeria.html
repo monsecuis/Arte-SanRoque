@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galería de obras de arte de estudiantes y docentes: artes plásticas, música, danza, teatro y literatura.">
+  <title>Galería | Arte San Roque González</title>
+
+  <!-- Tipografías (Google Fonts) e íconos (Font Awesome gratuito) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Young+Serif&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body data-pagina="galeria">
+
+  <!-- ===== Encabezado y navegación ===== -->
+  <header class="encabezado">
+    <div class="contenedor encabezado__contenido">
+      <a href="index.html" class="logo"><i class="fa-solid fa-palette"></i><span>Arte <strong>San Roque</strong></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPrincipal">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <nav class="navegacion" id="menuPrincipal" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="artistas.html">Artistas</a></li>
+          <li><a href="eventos.html">Eventos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="cabecera-pagina">
+      <div class="contenedor">
+        <h1>Galería de obras</h1>
+        <p>Explorá la producción artística de nuestra comunidad educativa.</p>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor">
+        <!-- Filtros: categoría (botones) + autor, técnica y año (listas) -->
+        <div class="filtros">
+          <div class="filtros__categorias" id="filtroCategorias" role="group" aria-label="Filtrar por disciplina"></div>
+          <div class="filtros__selects">
+            <label><span class="solo-lector">Autor</span><select id="filtroArtista"></select></label>
+            <label><span class="solo-lector">Técnica</span><select id="filtroTecnica"></select></label>
+            <label><span class="solo-lector">Año</span><select id="filtroAnio"></select></label>
+          </div>
+        </div>
+
+        <p class="resultado-filtro" aria-live="polite">
+          <span id="resultadoFiltro">Cargando obras…</span> ·
+          <button class="btn btn--secundario btn--pequeno" id="limpiarFiltros">Limpiar filtros</button>
+        </p>
+
+        <!-- Cuadrícula de obras: generada desde data/obras.json -->
+        <div class="grilla" id="grillaObras"></div>
+        <p class="vacio oculto" id="sinResultados"><i class="fa-regular fa-face-frown"></i> No hay obras que coincidan con los filtros seleccionados.</p>
+      </div>
+    </section>
+
+    <!-- Ficha técnica de la obra -->
+    <dialog class="modal" id="modalFicha" aria-labelledby="tituloFicha">
+      <button class="modal__cerrar" aria-label="Cerrar"><i class="fa-solid fa-xmark"></i></button>
+      <div id="contenidoFicha"></div>
+    </dialog>
+  </main>
+
+  <!-- ===== Pie de página ===== -->
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie__columnas">
+        <div>
+          <h3>Colegio Nacional E.M.D. "San Roque González de Santacruz"</h3>
+          <p>Coronel Oviedo, Caaguazú, Paraguay.</p>
+        </div>
+        <div>
+          <h3>Enlaces rápidos</h3>
+          <ul>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="artistas.html">Artistas</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contacto</h3>
+          <ul>
+            <li><i class="fa-solid fa-location-dot"></i> Coronel Oviedo</li>
+            <li><a href="contacto.html"><i class="fa-solid fa-envelope"></i> Escribinos</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="pie__creditos">&copy; <span id="anioActual">2026</span> Arte San Roque · Desarrollado por Monserrath Arami Coronel Riveros — Bachillerato Técnico en Informática</p>
+    </div>
+  </footer>
+
+  <script src="js/datos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

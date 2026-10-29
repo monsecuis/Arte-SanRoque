@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulario de contacto y datos institucionales del área de Artes del Colegio Nacional San Roque González de Santacruz.">
+  <title>Contacto | Arte San Roque González</title>
+
+  <!-- Tipografías (Google Fonts) e íconos (Font Awesome gratuito) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Young+Serif&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body data-pagina="contacto">
+
+  <!-- ===== Encabezado y navegación ===== -->
+  <header class="encabezado">
+    <div class="contenedor encabezado__contenido">
+      <a href="index.html" class="logo"><i class="fa-solid fa-palette"></i><span>Arte <strong>San Roque</strong></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPrincipal">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <nav class="navegacion" id="menuPrincipal" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="artistas.html">Artistas</a></li>
+          <li><a href="eventos.html">Eventos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="cabecera-pagina">
+      <div class="contenedor">
+        <h1>Contacto</h1>
+        <p>¿Querés proponer una obra, sumarte a un taller o hacer una consulta? Escribinos.</p>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor contacto">
+        <!-- Formulario con validación en tiempo real (main.js → validarFormulario) -->
+        <div class="tarjeta">
+          <h2>Envianos un mensaje</h2>
+          <div id="alertaContacto" role="status" aria-live="polite"></div>
+
+          <form id="formContacto" novalidate>
+            <div class="campo">
+              <label for="nombre">Nombre completo *</label>
+              <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+              <span class="campo__error"></span>
+            </div>
+
+            <div class="campo">
+              <label for="correo">Correo electrónico *</label>
+              <input type="email" id="correo" name="correo" autocomplete="email" required>
+              <span class="campo__error"></span>
+            </div>
+
+            <div class="campo">
+              <label for="asunto">Asunto *</label>
+              <input type="text" id="asunto" name="asunto" list="asuntos" required>
+              <datalist id="asuntos">
+                <option value="Propuesta de obra">
+                <option value="Consulta sobre talleres">
+                <option value="Información de eventos">
+                <option value="Otro">
+              </datalist>
+              <span class="campo__error"></span>
+            </div>
+
+            <div class="campo">
+              <label for="mensaje">Mensaje * <span class="campo__ayuda">(mínimo 20 caracteres)</span></label>
+              <textarea id="mensaje" name="mensaje" required></textarea>
+              <span class="campo__error"></span>
+            </div>
+
+            <button type="submit" class="btn btn--primario"><i class="fa-solid fa-paper-plane"></i> Enviar mensaje</button>
+          </form>
+        </div>
+
+        <!-- Datos institucionales (completar con los datos oficiales) -->
+        <aside class="tarjeta">
+          <h2>Datos institucionales</h2>
+          <ul class="datos-contacto">
+            <li><i class="fa-solid fa-school"></i><span>Colegio Nacional E.M.D. "San Roque González de Santacruz"</span></li>
+            <li><i class="fa-solid fa-location-dot"></i><span>Coronel Oviedo, Caaguazú, Paraguay</span></li>
+            <li><i class="fa-solid fa-envelope"></i><span>Correo: <a href="mailto:monserrathcuis16@gmail.com">monserrathcuis16@gmail.com</a></span></li>
+            <li><i class="fa-regular fa-clock"></i><span>Turnos mañana y tarde</span></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Pie de página ===== -->
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie__columnas">
+        <div>
+          <h3>Colegio Nacional E.M.D. "San Roque González de Santacruz"</h3>
+          <p>Coronel Oviedo, Caaguazú, Paraguay.</p>
+        </div>
+        <div>
+          <h3>Enlaces rápidos</h3>
+          <ul>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="artistas.html">Artistas</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contacto</h3>
+          <ul>
+            <li><i class="fa-solid fa-location-dot"></i> Coronel Oviedo</li>
+            <li><a href="contacto.html"><i class="fa-solid fa-envelope"></i> Escribinos</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="pie__creditos">&copy; <span id="anioActual">2026</span> Arte San Roque · Desarrollado por Monserrath Arami Coronel Riveros — Bachillerato Técnico en Informática</p>
+    </div>
+  </footer>
+
+  <script src="js/datos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

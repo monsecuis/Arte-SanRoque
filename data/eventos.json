@@ -1,0 +1,38 @@
+[
+  {
+    "id": "e1",
+    "titulo": "Muestras artísticas por el Día del Folklore",
+    "fecha": "2026-08-04",
+    "hora": "8:00 a.m.",
+    "lugar": "Colegio San Roque González",
+    "categoria": "danza",
+    "descripcion": "Presentaciones de danzas folklóricas paraguayas en conmemoración del Día del Folklore."
+  },
+  {
+    "id": "e4",
+    "titulo": "Leyenda viva del Paraguay",
+    "fecha": "2026-10-17",
+    "hora": "8:00 p.m.",
+    "lugar": "Salón Thunder Eventos",
+    "categoria": "teatro",
+    "descripcion": "Presentación de cortometrajes sobre leyendas paraguayas realizados por los estudiantes del 2.º BCCS, a cargo de la profesora de Artes Perla Rocío Bobadilla. Se votará el mejor cortometraje 2026. Entrada totalmente gratis."
+  },
+  {
+    "id": "e2",
+    "titulo": "Expo SanRo",
+    "fecha": "2026-10-28",
+    "hora": "8:00 a.m.",
+    "lugar": "Polideportivo de la institución",
+    "categoria": "artes-plasticas",
+    "descripcion": "Exposición de obras de artes plásticas realizadas por los estudiantes."
+  },
+  {
+    "id": "e3",
+    "titulo": "FESTI SanRo",
+    "fecha": "2026-11-03",
+    "hora": "7:00 p.m.",
+    "lugar": "Cerrito cerrado",
+    "categoria": "danza",
+    "descripcion": "Festival de danza con presentaciones de los estudiantes del colegio."
+  }
+]

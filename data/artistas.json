@@ -1,0 +1,179 @@
+[
+  {
+    "id": "a6",
+    "nombre": "Melanny Abigail Duarte Martínez",
+    "disciplina": "danza",
+    "curso": "8.º grado",
+    "biografia": "Bailarina desde los 7 años; nació el 29 de enero de 2013. Cursa el 6.º año en la academia Bailares School of Dance y forma parte del elenco de danza del colegio. Ha concursado en varios certámenes nacionales e internacionales, llevando su talento, disciplina y entusiasmo a cada escenario.",
+    "foto": "img/artistas/melanny-duarte.jpg"
+  },
+  {
+    "id": "a7",
+    "nombre": "Marian Nicole Espínola Varela",
+    "disciplina": "danza",
+    "curso": "8.º grado, sección A – Turno mañana",
+    "biografia": "Nacida en Coronel Oviedo en 2012, integra el Elenco SanRo Jeroky desde 2025. Cursa el Profesorado en Danza en la Escuela Municipal de Danza de Coronel Oviedo y es miembro del Elenco Municipal de Danza de la ciudad. Es apasionada por la danza y el dibujo.",
+    "foto": "img/artistas/marian-espinola.jpg"
+  },
+  {
+    "id": "a8",
+    "nombre": "Julieta Azucena Arami Oviedo",
+    "disciplina": "danza",
+    "curso": "1.er año – Bachillerato Científico con Énfasis en Ciencias Sociales",
+    "biografia": "Integra el Elenco SanRo Jeroky desde el 7.º grado. Ganadora del 1.er puesto en la categoría Estilización del Concurso Nacional Danzares 2025. Alumna de la Escuela Municipal de Danza de Cnel. Oviedo, donde cursa el 1.er año del Profesorado Superior en Danza Paraguaya, Clásica y Española.",
+    "foto": "img/artistas/julieta-oviedo.jpg"
+  },
+  {
+    "id": "a9",
+    "nombre": "Santiago Josué Ortiz González",
+    "disciplina": "danza",
+    "curso": "1.er año – Bachillerato Técnico en Informática",
+    "biografia": "Nació en Coronel Oviedo el 1 de diciembre de 2010. Comenzó sus estudios de danza en la Casa de la Cultura. Forma parte del Elenco SanRo Jeroky desde 2024 y también del Elenco Municipal de Danza de Coronel Oviedo.",
+    "foto": "img/artistas/santiago-ortiz.jpg"
+  },
+  {
+    "id": "a10",
+    "nombre": "José Alexander Nahuel Cáceres Cáceres",
+    "disciplina": "danza",
+    "curso": "8.º grado, sección A – Turno mañana",
+    "biografia": "Bailarín y músico de 13 años. Estudia zapateo y los profesorados de música, canto y guitarra en la Escuela Municipal de Cnel. Oviedo. Representó al colegio en el Concurso Internacional Danzarte 2026 (Villarrica) y obtuvo el 1.er puesto en cuarteto masculino. Integra el Elenco SanRo Jeroky y la delegación artística de la Municipalidad de Cnel. Oviedo. Finalista del Concurso Ñe'ê ry 2026 con el poema \"Mi reflejo\".",
+    "foto": "img/artistas/jose-caceres.jpg"
+  },
+  {
+    "id": "a11",
+    "nombre": "Margareth Magali Corrales Ortellado",
+    "disciplina": "danza",
+    "curso": "7.º grado, sección B – Turno mañana",
+    "biografia": "Nació el 20 de febrero de 2014. Estudia en la academia Bailares School of Dance by Milagros Corrales danza clásica, paraguaya, española, árabe, acrodance y jazz, y es parte del elenco de la academia. Participó en varios concursos nacionales e internacionales obteniendo el primer puesto. Este año integra también el Elenco SanRo Jeroky.",
+    "foto": "img/artistas/margareth-corrales.jpg"
+  },
+  {
+    "id": "a12",
+    "nombre": "Karen Jazmín Arias Pereira",
+    "disciplina": "danza",
+    "curso": "1.er año – Bachillerato Técnico en Informática",
+    "biografia": "Nació en Coronel Oviedo el 2 de abril de 2011. Empezó la danza en la academia Bailares School of Dance (1.º a 3.er curso) y hoy cursa el 6.º año del Profesorado de Danza en la Escuela Municipal de Danzas de Coronel Oviedo. Integra el Elenco SanRo Jeroky desde 2023 y el Elenco Municipal de Cnel. Oviedo. Participó con éxito en concursos con cántaros, cantarillas y botellas.",
+    "foto": "img/artistas/karen-arias.jpg"
+  },
+  {
+    "id": "a13",
+    "nombre": "Brahiam Samuel Barreto Franco",
+    "disciplina": "danza",
+    "curso": "7.º grado, sección A – Turno tarde",
+    "biografia": "Nació en Coronel Oviedo en 2013. Desde este año forma parte del Elenco SanRo Jeroky. En agosto participó en el Concurso Internacional de Danza \"Danzarte\" (Villarrica del Espíritu Santo), donde obtuvo el 1.er puesto en la categoría Cuarteto. Estudia zapateo en la Escuela Municipal de Danza y es integrante del Elenco Municipal de Danza de Coronel Oviedo.",
+    "foto": "img/artistas/brahiam-barreto.jpg"
+  },
+  {
+    "id": "a14",
+    "nombre": "Tobías Gabriel Rojas Román",
+    "disciplina": "danza",
+    "curso": "9.º grado, sección A – Turno tarde",
+    "biografia": "Nació el 13 de agosto de 2011 en Coronel Oviedo e integra el Elenco SanRo Jeroky desde 2024. En agosto participó en el Concurso Internacional de Danza \"Danzarte\" (Villarrica del Espíritu Santo), donde obtuvo el 1.er puesto en Cuarteto. Estudia zapateo y distintas modalidades de danza en la Escuela Municipal de Danza y es integrante del Elenco Municipal de Danza de Coronel Oviedo.",
+    "foto": "img/artistas/tobias-rojas.jpg"
+  },
+  {
+    "id": "a15",
+    "nombre": "Fabiana Verenise Cantero López",
+    "disciplina": "literatura",
+    "curso": "9.º grado, sección A – Turno tarde",
+    "biografia": "Tiene 14 años; nació el 24 de enero de 2012 en Coronel Oviedo. Completó su formación desde el jardín de infantes hasta el segundo ciclo en la Escuela Dr. Pedro P. Peña, conocida como «Repollito». Finalista del Concurso Ñe'ẽry 2026 con el poema «Che Symi Porã».",
+    "foto": "img/artistas/fabiana-cantero.jpg"
+  },
+  {
+    "id": "a16",
+    "nombre": "Alvaro Josué Guerrero Venialgo",
+    "disciplina": "literatura",
+    "curso": "8.º grado",
+    "biografia": "Tiene 13 años; nació el 16 de enero de 2013 en Asunción y vive en Coronel Oviedo. Cursó la primaria en el Centro Educacional Betel. Es autodidacta y dibuja desde pequeño: empezó con los superhéroes y, al adentrarse en el mundo de los cómics, nació «El Monstruo del Pantano», obra reconocida por la Gobernación del V Departamento de Caaguazú por su aporte artístico y de concienciación ambiental. Dibuja y escribe.",
+    "foto": "img/artistas/alvaro-guerrero.jpg"
+  },
+  {
+    "id": "a17",
+    "nombre": "Elenco SanRo Jeroky",
+    "disciplina": "danza",
+    "curso": "Elenco de danza folklórica – integrantes de distintos grados y cursos",
+    "biografia": "Nació como un proyecto escolar para dar visibilidad al potencial artístico de los distintos grados, impulsado por las alumnas Soledad Escobar y Angélica Ortiz junto a la Lic. Liliana Insfrán. Su nombre se presentó oficialmente el 22 de agosto de 2023, en el Día del Folclore del colegio. Ese mismo mes se presentó en el programa Oviedo y Cultura y luego participó en la FESO. Hoy, coordinado por la Lic. Liliana Insfrán, el elenco trasciende generaciones manteniendo vivas nuestras raíces folclóricas y dejando en alto a la institución.",
+    "foto": "img/artistas/elenco-sanro-jeroky.jpg"
+  },
+  {
+    "id": "a18",
+    "nombre": "Camila Aylen Cristaldo Aquino",
+    "disciplina": "artes-plasticas",
+    "curso": "9.º grado – Turno tarde",
+    "biografia": "Nació en Coronel Oviedo el 30 de mayo de 2011. Inició el nivel inicial en la escuela Adolfo Kolping y cursó el 1.er y 2.º ciclo de la EEB en la escuela Wenceslaa Escalada. Su lema: «No tengas miedo a mancharte, ten miedo a irte sin haber pintado».",
+    "foto": "img/artistas/camila-cristaldo.jpg"
+  },
+  {
+    "id": "a19",
+    "nombre": "Brenda Nicole Cohene Britos",
+    "disciplina": "literatura",
+    "curso": "8.º grado, sección B – Turno mañana",
+    "biografia": "Tiene 13 años. Completó su formación desde el preescolar hasta el final del segundo ciclo de la EEB en la Escuela Básica N.º 1407 Amigos de las Américas. Con el poema «Preciosa Kyra» fue finalista del Concurso Ñe'ê ry 2026 y ganadora del primer puesto; representando al colegio en la etapa departamental obtuvo el segundo puesto. También estudia danza en la Escuela Municipal de Danza en Nueva Londres.",
+    "foto": "img/artistas/brenda-cohene.jpg"
+  },
+  {
+    "id": "a20",
+    "nombre": "Lucas Fabrizio Ferreira Rotela",
+    "disciplina": "literatura",
+    "curso": "2.º año – Bachillerato Técnico en Informática – Turno mañana",
+    "biografia": "Nació el 6 de septiembre de 2009 (17 años). Completó la EEB hasta el segundo ciclo en el Centro Cristiano Educacional Betel N.º 3744. Mejor alumno y estudiante destacado en lo académico, cultural y deportivo. Con el material audiovisual «Coronel» fue finalista del Concurso Ñe'ê ry 2026 y obtuvo el 3.er puesto. Como diseñador creó las remeras de la hinchada del colegio para los juegos estudiantiles de la FESO. Representa al colegio en natación y básquetbol, y a Coronel Oviedo en natación, donde fue varias veces campeón regional y nacional.",
+    "foto": "img/artistas/lucas-ferreira.jpg"
+  },
+  {
+    "id": "a21",
+    "nombre": "Isaías Sebastián Mereles Coronel",
+    "disciplina": "musica",
+    "curso": "2.º año – Bachillerato Científico con Énfasis en Ciencias Sociales",
+    "biografia": "Nació el 22 de septiembre de 2009 (17 años). Completó la formación básica hasta el 6.º grado en la Escuela Básica N.º 6017 Dr. Pedro P. Peña «Repollito». Baterista: cursa el 5.º año del Profesorado con énfasis en Batería, el 4.º año de Lenguaje Musical y el 3.er año del Profesorado con énfasis en Guitarra Popular. Participó en giras internacionales con orquestas filarmónicas y corales representando a Coronel Oviedo y Paraguay. Medallista de la OMAPA a nivel nacional (2022, 2024 y 2025) y finalista del Concurso Ñe'ê ry con el audiovisual «Mi Barrio» (3.er puesto). Completó el módulo Avanzado Superior 2 (AS2) en el CCPA y es voluntario en organizaciones benéficas.",
+    "foto": "img/artistas/isaias-mereles.jpg",
+    "instagram": "https://www.instagram.com/sebasmdrums"
+  },
+  {
+    "id": "a22",
+    "nombre": "Luciana Taís Ovelar Orquiola",
+    "disciplina": "musica",
+    "curso": "2.º año – Bachillerato Técnico en Informática – Turno mañana",
+    "biografia": "Nació el 12 de mayo de 2010. Cantante y profesora de canto en formación: elabora su tesis para culminar la carrera de Canto Popular y cursa el Profesorado de Guitarra. Integra el Coro Municipal, con el que representó a Paraguay en Argentina, Chile y Brasil. En 2026 ganó el Concurso Ñe'ê ry en su institución con el audiovisual «Música y Cultura» y se clasificó a la fase 3. Representa al colegio en canto y básquetbol, y se desempeña como community manager.",
+    "foto": "img/artistas/luciana-ovelar.jpg"
+  },
+  {
+    "id": "a23",
+    "nombre": "Bethania Noemí Escobar Mendoza",
+    "disciplina": "literatura",
+    "curso": "3.er año – Bachillerato Técnico en Informática – Turno mañana",
+    "biografia": "Nació el 4 de abril de 2009 (17 años). Estudió en la Escuela Básica N.º 4781 «Carmen Marci Fossati de Flores» y en la Escuela Básica N.º 698 «Wenceslaa Escalada». Finalista del Concurso Ñe'ê ry 2026 (2.º puesto). Estudiante distinguida, destacada en el ámbito cultural y en aprendizaje-servicio e investigación. Representó al colegio en la «Justa del Saber» de la FESO (2022), fue «Directora por un día» en 2017 y 2018, y es vicepresidenta de curso en la Educación Media.",
+    "foto": "img/artistas/bethania-escobar.jpg"
+  },
+  {
+    "id": "a24",
+    "nombre": "Lic. Perla Rocío Bobadilla Iglesias",
+    "disciplina": "artes-plasticas",
+    "curso": "Docente de Artes – Especialidad en Creatividad Plástica",
+    "biografia": "Docente de Artes del colegio, nacida en Coronel Oviedo y egresada de esta misma institución (Bachiller 2005). Profesora de Dibujo y Pintura y de Artes Plásticas (IBA Emmanuel), Licenciada y Magíster en Ciencias de la Educación (ISE Santo Tomás) y Técnica Docente en Gestión Educativa (IFD). Destacada a nivel nacional en creatividad plástica, participó en proyectos como «Pintemos el Mañana» en la Plaza Amistad (2024), el Festival Audiovisual Internacional y las Escuelas Abiertas Vy'a Renda del MEC. Actualmente también enseña en el Colegio 12 de Junio – Centro N.º 90 Penitenciaría.",
+    "foto": "img/artistas/perla-bobadilla.jpg"
+  },
+  {
+    "id": "a25",
+    "nombre": "Jhonny Salvador Franco Maciel",
+    "disciplina": "literatura",
+    "curso": "8.º grado – Educación Escolar Básica",
+    "biografia": "Joven escritor de Coronel Oviedo, departamento de Caaguazú. Comenzó a escribir a principios de 2026 y desarrolla su primera novela, «Resurrección a 400 años luz», de ciencia ficción. Su inspiración nace de una sensación de vacío que busca llenar expresando las grandes historias que guarda su imaginación. Le gustan los videojuegos, la lectura, crear mundos fantásticos con Dungeons & Dragons, pasar tiempo con su familia y las series y películas de ficción, y estudia escritura para mejorar en cada palabra. Su objetivo es que su obra sea conocida y crezca más allá de su idea original.",
+    "foto": "img/artistas/jhonny-franco.jpg"
+  },
+  {
+    "id": "a26",
+    "nombre": "Sofía Anabella Guerrero Venialgo",
+    "disciplina": "literatura",
+    "curso": "9.º grado",
+    "biografia": "Tiene 14 años; nació el 5 de noviembre de 2011 en Asunción y vive en Coronel Oviedo. Le gusta escribir, crear, dibujar y el reciclaje. Su técnica es la escritura creativa a mano: en 2024, cuando cursaba el 7.º grado, escribió e ilustró el cuento «Los Gatos Guerreros y el V Clan» para el Programa Nacional de Lectura, Escritura y Oralidad.",
+    "foto": "img/artistas/sofia-guerrero.jpg"
+  },
+  {
+    "id": "a27",
+    "nombre": "Antonela Paniagua",
+    "disciplina": "literatura",
+    "curso": "3.er año – Bachillerato Científico con Énfasis en Ciencias Sociales",
+    "biografia": "Estudiante apasionada por la escritura. Cuenta con varios ensayos publicados en KidSpirit, una revista digital escrita por y para jóvenes de distintas partes del mundo, donde comparte sus reflexiones e ideas. Para ella, escribir es una forma de ordenar lo que piensa, mirar el mundo con otros ojos y dar voz a su generación.",
+    "foto": "img/artistas/antonela-paniagua.jpg"
+  }
+]
