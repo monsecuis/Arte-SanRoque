@@ -5,7 +5,7 @@
    Al modificar archivos, cambiar VERSION para renovar la caché.
    ========================================================================== */
 
-const VERSION = 'arte-sr-v33';
+const VERSION = 'arte-sr-v34';
 
 const ARCHIVOS = [
   './',

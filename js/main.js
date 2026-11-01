@@ -589,6 +589,10 @@ function renderizarEventos(eventos, contenedorProximos, opciones) {
    Contacto: validación en tiempo real
    ========================================================================== */
 
+// Los mensajes del formulario llegan a este correo (servicio FormSubmit, sin servidor propio)
+const CORREO_CONTACTO = 'monserrathcuis16@gmail.com';
+const URL_ENVIO_CORREO = 'https://formsubmit.co/ajax/' + CORREO_CONTACTO;
+
 const REGLAS_CONTACTO = {
   nombre: function (v) { return v.trim().length >= 3 ? '' : 'Ingresá tu nombre (mínimo 3 caracteres).'; },
   correo: function (v) { return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim()) ? '' : 'Ingresá un correo electrónico válido.'; },
@@ -624,6 +628,10 @@ function iniciarContacto() {
   const alerta = document.getElementById('alertaContacto');
   if (!formulario) return;
 
+  // Si se llega desde Eventos (contacto.html?asunto=...), el asunto ya aparece completado
+  const asuntoInicial = new URLSearchParams(location.search).get('asunto');
+  if (asuntoInicial) formulario.asunto.value = asuntoInicial;
+
   formulario.addEventListener('input', function (e) { validarCampo(e.target); });
 
   formulario.addEventListener('submit', function (e) {
@@ -636,21 +644,54 @@ function iniciarContacto() {
       return;
     }
 
-    // Sitio estático: el mensaje se guarda localmente (simulación de envío).
-    const mensajes = Datos.leerPreferencia('mensajesContacto', []);
-    mensajes.push({
+    const datosMensaje = {
       nombre: formulario.nombre.value.trim(),
       correo: formulario.correo.value.trim(),
       asunto: formulario.asunto.value.trim(),
       mensaje: formulario.mensaje.value.trim(),
       fecha: new Date().toISOString()
-    });
-    Datos.guardarPreferencia('mensajesContacto', mensajes);
+    };
+    const boton = formulario.querySelector('button[type="submit"]');
+    boton.disabled = true;
+    alerta.className = 'alerta';
+    alerta.textContent = 'Enviando mensaje…';
 
-    alerta.className = 'alerta alerta--exito';
-    alerta.textContent = '¡Gracias, ' + formulario.nombre.value.trim() + '! Tu mensaje fue registrado correctamente.';
-    formulario.reset();
-    formulario.querySelectorAll('.campo').forEach(function (c) { c.classList.remove('valido', 'invalido'); });
+    // Sitio estático: el mensaje se envía al correo con el servicio gratuito FormSubmit.
+    fetch(URL_ENVIO_CORREO, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({
+        _subject: 'Arte San Roque – ' + datosMensaje.asunto,
+        _replyto: datosMensaje.correo,
+        _template: 'table',
+        _captcha: 'false',
+        Nombre: datosMensaje.nombre,
+        Correo: datosMensaje.correo,
+        Asunto: datosMensaje.asunto,
+        Mensaje: datosMensaje.mensaje
+      })
+    })
+      .then(function (respuesta) {
+        if (!respuesta.ok) throw new Error('HTTP ' + respuesta.status);
+        return respuesta.json();
+      })
+      .then(function (resultado) {
+        if (String(resultado.success) !== 'true') throw new Error(resultado.message || 'Envío rechazado');
+        alerta.className = 'alerta alerta--exito';
+        alerta.textContent = '¡Gracias, ' + datosMensaje.nombre + '! Tu mensaje fue enviado correctamente.';
+        formulario.reset();
+        formulario.querySelectorAll('.campo').forEach(function (c) { c.classList.remove('valido', 'invalido'); });
+      })
+      .catch(function (error) {
+        // Sin conexión u otro error: se guarda una copia local para no perder el mensaje.
+        console.warn('No se pudo enviar el mensaje:', error.message);
+        const pendientes = Datos.leerPreferencia('mensajesContacto', []);
+        pendientes.push(datosMensaje);
+        Datos.guardarPreferencia('mensajesContacto', pendientes);
+        alerta.className = 'alerta alerta--error';
+        alerta.textContent = 'No se pudo enviar el mensaje. Revisá tu conexión e intentá de nuevo, o escribinos a ' + CORREO_CONTACTO + '.';
+      })
+      .finally(function () { boton.disabled = false; });
   });
 }
 

@@ -868,3 +868,12 @@ button, input, select, textarea { font: inherit; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
   html { scroll-behavior: auto; }
 }
+
+/* Consulta al pie de la agenda de eventos */
+.eventos__consulta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+  margin-top: 2rem;
+}
